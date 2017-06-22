@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZhengscDev/react-native-webview-android.git"
+    "url": "https://github.com/ZhengscDev/react-native-webview-android.git"
   },
   "keywords": [
     "webview"
