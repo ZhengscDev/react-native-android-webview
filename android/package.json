@@ -33,5 +33,6 @@
   "homepage": "https://github.com/ZhengscDev/react-native-webview-android#readme",
   "main": "WebViewAndroid.js",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "readme":""
 }
