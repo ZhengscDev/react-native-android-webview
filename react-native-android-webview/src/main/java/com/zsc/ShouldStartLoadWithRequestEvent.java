@@ -1,4 +1,4 @@
-package com.reactwebviewandroid;
+package com.zsc;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;

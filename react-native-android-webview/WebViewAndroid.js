@@ -44,7 +44,7 @@ var defaultRenderLoading = () => (
 /**
  * Renders a libs WebView.
  */
-class WebViewAndroid extends React.Component {
+export default class WebViewAndroid extends React.Component {
     static propTypes = {
         ...View.propTypes,
         renderError: PropTypes.func,
@@ -399,4 +399,4 @@ var styles = StyleSheet.create({
     },
 });
 
-module.exports = WebViewAndroid;
+// module.exports = WebViewAndroid;

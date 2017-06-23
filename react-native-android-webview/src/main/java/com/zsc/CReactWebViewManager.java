@@ -7,7 +7,7 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-package com.reactwebviewandroid;
+package com.zsc;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;

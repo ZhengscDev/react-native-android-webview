@@ -1,4 +1,4 @@
-package com.reactwebviewandroid;
+package com.zsc;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
