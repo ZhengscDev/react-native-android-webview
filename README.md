@@ -25,7 +25,7 @@
 3. Add the import and link the package in `MainApplication.java`:
 
     ```java
-    import com.zsc.RNWebViewPackage;  <-- add this import
+    import com.zsc.RNWebViewPackage;  //<-- add this import
 
     public class MainApplication extends Application implements ReactApplication {
         @Override
