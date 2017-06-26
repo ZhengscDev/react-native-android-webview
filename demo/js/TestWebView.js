@@ -3,42 +3,42 @@
  */
 import React, {Component} from 'react'
 import {
-    StyleSheet,
-    WebView,
-    View,
-    StatusBar,
-    Alert,
-    Platform,
-    BackAndroid,
-    ToastAndroid
+    View
 } from 'react-native'
 
 //引入WebViewAndroid lib
-import WebViewAndroid from './libs/WebViewAndroid'
+import WebViewAndroid from 'react-native-android-webview'
 const WEBVIEW_REF = 'webview';
 
-export default class WebViewDemo extends Component {
+//被拦截的url包含的字符串，此处可以写完整的url
+const INTERCEPT_URL = 'news.baidu';
 
-    _onLoadStart = ()=> {
+
+export default class TestWebView extends Component {
+
+    _onLoadStart = () => {
         console.log('------_onLoadStart---->>')
     }
 
-    _onLoadError = ()=> {
+    _onLoadError = () => {
         console.log('------_onLoadError---->>')
     }
 
-    _onLoadSuccess = ()=> {
+    _onLoadSuccess = () => {
         console.log('------_onLoadSuccess---->>')
     }
 
+    /**
+     * 在此方法中根据设置拦截的url，去做相应的逻辑
+     * @param event
+     * @returns {boolean}
+     */
     onShouldStartLoadWithRequest = (event) => {
         var url = event.url;
-        console.log('-------onShouldStartLoadWithRequest-------url----------' + url);
+        console.log('------------url----------' + url);
         if (url && url.length) {
             if (url.indexOf('news.baidu') >= 0) {
-                console.log('-------被拦截----------');
-                const {navigate} = this.props.navigation;
-                navigate('InterceptResultPage');
+                alert(INTERCEPT_URL + '被拦截');
                 return false;
             }
         }
@@ -47,9 +47,8 @@ export default class WebViewDemo extends Component {
     };
 
     render() {
-        // console.log('this.props.navigation.state.url------->' + this.props.navigation.state.params.url);
         return (
-            <View style={{height:'100%'}}>
+            <View style={{height:'100%',width:'100%'}}>
 
                 <WebViewAndroid
                     ref={WEBVIEW_REF}
@@ -57,7 +56,7 @@ export default class WebViewDemo extends Component {
                     onLoadStart={() => this._onLoadStart()}
                     onError={() => this._onLoadError()}
                     onLoad={() => this._onLoadSuccess()}
-                    injectFilterInterceptArray={["news.baidu"]}
+                    injectFilterInterceptArray={[INTERCEPT_URL]}
                     allowInterceptUrl={true}
                     style={{
                         backgroundColor:'#FFFFFF',

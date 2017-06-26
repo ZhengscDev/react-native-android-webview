@@ -1,4 +1,4 @@
-package com.reactwebviewandroid;
+package com.demo;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "react-native-webview-android";
+        return "demo";
     }
 }

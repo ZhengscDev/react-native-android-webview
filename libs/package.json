@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-webview",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "react native webview",
   "main": "WebViewAndroid.js",
   "scripts": {

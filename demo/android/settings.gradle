@@ -1,0 +1,4 @@
+rootProject.name = 'demo'
+include ':react-native-android-webview'
+project(':react-native-android-webview').projectDir = new File(settingsDir, '../node_modules/react-native-android-webview')
+include ':app'
