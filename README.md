@@ -1,5 +1,5 @@
 # react-native-android-webview
-解决React Native 自带的WebView组件不能拦截URL的问题
+解决React Native 自带的WebView组件Android不能拦截URL的问题
 
 
 ## Installation
