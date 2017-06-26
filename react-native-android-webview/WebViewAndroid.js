@@ -8,20 +8,39 @@
  *
  * @providesModule WebView
  */
-'use strict';
+'use strict'
 
-var EdgeInsetsPropType = require('EdgeInsetsPropType');
-var ActivityIndicator = require('ActivityIndicator');
-var React = require('React');
-var ReactNative = require('ReactNative');
-var StyleSheet = require('StyleSheet');
-var UIManager = require('UIManager');
-var View = require('View');
-
-var deprecatedPropType = require('deprecatedPropType');
+//******************************change by zhengshihao**********************************************//
+var React = require('react');
 var keyMirror = require('fbjs/lib/keyMirror');
-var requireNativeComponent = require('requireNativeComponent');
-var resolveAssetSource = require('resolveAssetSource');
+var deprecatedPropType = require('react-native/Libraries/Utilities/deprecatedPropType');
+var resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
+var requireNativeComponent = require('react-native/Libraries/ReactNative/requireNativeComponent');
+
+import {
+    EdgeInsetsPropType,
+    ActivityIndicator,
+    ReactNative,
+    StyleSheet,
+    View,
+    UIManager
+}from 'react-native'
+//******************************结束************************************************//
+
+// import {
+//     keyMirror
+// } from 'fbjs/lib/keyMirror'
+
+// var EdgeInsetsPropType = require('EdgeInsetsPropType');
+// var ActivityIndicator = require('ActivityIndicator');
+
+// var ReactNative = require('ReactNative');
+// var StyleSheet = require('StyleSheet');
+// var UIManager = require('UIManager');
+// var View = require('View');
+
+// var requireNativeComponent = require('requireNativeComponent');
+// var resolveAssetSource = require('resolveAssetSource');
 
 var PropTypes = React.PropTypes;
 
