@@ -2,12 +2,12 @@
 解决React Native 自带的WebView组件不能拦截URL的问题
 
 
-##Installation
+## Installation
 `npm install react-native-android-webview --save`
 
-##Manual Native Library Linking
+## Native Library Linking
 
-###Android
+### Android
 1. Add the following lines to `android/settings.gradle`:
 
     ```gradle
